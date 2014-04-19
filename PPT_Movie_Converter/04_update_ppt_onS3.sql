@@ -1,6 +1,6 @@
 #script to update the submitted ppt file stored on S3
 update wp_postmeta
-set meta_value = replace(meta_value, '.ppt', '.mov')
+set meta_value = replace(meta_value, '.ppt', '.mp4')
 where post_id in 
     (
         select uploaded_files_ids
