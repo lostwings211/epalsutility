@@ -1,3 +1,5 @@
+-- Step 1: Create the backup table wp_posts_backup
+
 DROP TABLE IF EXISTS `wp_posts_backup`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
