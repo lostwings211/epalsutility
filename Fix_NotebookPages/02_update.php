@@ -27,15 +27,13 @@ while ($line = mysql_fetch_array($result, MYSQL_ASSOC)){
     $PostID = $line['ID'];
     $post_content = $line['post_content'];
     
-    
     $matched = ereg($pattern, $post_content);
     if($matched) {
         print ("PostID: $PostID");
         
         $post_content_new = ereg_replace($pattern, $replacement, $post_content);
         $update_sql = "UPDATE wp_posts SET post_content  = '" . $post_content_new . "' WHERE ID = $PostID";
-       
-        //mysql_query($update_sql) or die('Update Query failed: ' . mysql_error() . "\n");
+        
         if(!mysql_query($update_sql)) {
             print("  Update Query Failed");
         }
