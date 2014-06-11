@@ -1,0 +1,16 @@
+Metric: Total Community
+Definition: All registered users with account status=active (has not been deactivated)
+
+Metric: Total Community By Country
+Definition: All registered users with account status=active, sort by Country (Top 25 and Others)
+
+Metric: Actives
+Definition: All registered users whose last login was on or after January 1st 2014
+
+Metric: Actives By Country
+Definition: All registered users whose last login was on or after January 1st 2014, sort by Country (Top 25 and Others)
+
+Metric: New Users
+Definition: All registered users with a joined date on or after January 1st, 2014
+
+
